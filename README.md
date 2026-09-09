@@ -4,7 +4,7 @@
 [![Tests](https://github.com/CWAscend/laravel-artisan-list-mine/actions/workflows/tests.yml/badge.svg)](https://github.com/CWAscend/laravel-artisan-list-mine/actions/workflows/tests.yml)
 [![Test Count](https://img.shields.io/badge/tests-15-brightgreen?style=flat-square)](https://github.com/CWAscend/laravel-artisan-list-mine/actions)
 [![PHP Version](https://img.shields.io/badge/php-%5E8.0-blue?style=flat-square)](composer.json)
-[![Laravel Version](https://img.shields.io/badge/laravel-9%20%7C%2010%20%7C%2011%20%7C%2012-red?style=flat-square)](composer.json)
+[![Laravel Version](https://img.shields.io/badge/laravel-9%20%7C%2010%20%7C%2011%20%7C%2012%20%7C%2013-red?style=flat-square)](composer.json)
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
 
 Ever used `php artisan list` to see what commands are available, or to remind yourself of a command's signature, but found yourself trawling through the long list of built-in Laravel commands? Easily filter them out by only showing your own artisan commands with `php artisan list --mine`.
@@ -35,7 +35,7 @@ This filters out:
 ### Example Output
 
 ```
-Laravel Framework 12.x
+Laravel Framework 13.x
 
 Usage:
   command [options] [arguments]
@@ -84,6 +84,16 @@ The package identifies "application commands" by:
 
 - PHP 8.0+
 - Laravel 9.0+
+
+Each Laravel release line has its own PHP floor. The combinations below are the ones covered by the test matrix:
+
+| Laravel | PHP           |
+|---------|---------------|
+| 13.x    | 8.3 - 8.5     |
+| 12.x    | 8.2 - 8.5     |
+| 11.x    | 8.2 - 8.4     |
+| 10.x    | 8.1 - 8.3     |
+| 9.x     | 8.0.2 - 8.3   |
 
 ## Testing
 
